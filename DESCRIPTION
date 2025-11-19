@@ -20,5 +20,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-URL: https://github.com/yourusername/wixarikaRt
+URL: https://github.com/yourusername/wixarikaRt, https://woomora.github.io/wixarikaRt/
 BugReports: https://github.com/yourusername/wixarikaRt/issues
