@@ -1,13 +1,24 @@
 Package: wixarikaRt
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Color Palettes Inspired by Wixarika (Huichol) people
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Guillermo", "Woo-Mora", , "guillermo.woo-mora@psemail.eu", role = c("aut", "cre"))
+Description: A collection of color palettes inspired by the art, culture, and 
+    symbolism of the Wixarika (Huichol) people and other Indigenous peoples of 
+    Mexico. Includes palettes for data visualization with support for ggplot2,
+    base R graphics, and colorblind-friendly options.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-URL: https://github.com/woomora/wixarikaRt
-BugReports: https://github.com/woomora/wixarikaRt/issues
+Imports:
+    ggplot2,
+    grDevices,
+    graphics
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/yourusername/wixarikaRt
+BugReports: https://github.com/yourusername/wixarikaRt/issues
