@@ -2,3 +2,13 @@ url: https://woomora.github.io/wixarikaRt/
 template:
   bootstrap: 5
 
+home:
+  title: "wixarikaRt • Color Palettes Inspired by Indigenous Peoples of Mexico"
+
+development:
+  mode: auto
+
+navbar:
+  structure:
+    left:  [intro, reference, articles, news]
+    right: [search, github]
