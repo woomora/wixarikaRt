@@ -1,0 +1,71 @@
+---
+title: "Getting Started with wixarikaRt"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with wixarikaRt}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 7,
+  fig.height = 5,
+  warning = FALSE,
+  message = FALSE
+)
+```
+```{r setup}
+library(wixarikaRt)
+library(ggplot2)
+```
+
+## Introduction
+
+**wixarikaRt** provides color palettes inspired by the Wixarika (Huichol) people and other Indigenous peoples of Mexico. These palettes bring the vibrant colors and deep symbolism of Indigenous art to your data visualizations.
+
+## Quick Start
+
+### View All Palettes
+```{r all-palettes, fig.height=10}
+wixarika_show_all()
+```
+
+### Using a Palette
+```{r basic-usage}
+# Get a palette
+colors <- wixarika_pal("tatewari_warm")
+colors
+
+# Use in base R
+barplot(1:6, col = colors, main = "Tatewari Warm")
+```
+
+### With ggplot2
+```{r ggplot-discrete}
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
+  geom_point(size = 3, alpha = 0.8) +
+  scale_color_wixarika("muvieri_vivid") +
+  theme_minimal() +
+  labs(title = "Iris Dataset with Muvieri Vivid Palette")
+```
+```{r ggplot-continuous}
+ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+  geom_raster() +
+  scale_fill_wixarika("hikuri_seq", discrete = FALSE) +
+  theme_minimal() +
+  labs(title = "Old Faithful with Hikuri Sequential Palette")
+```
+
+## Cultural Context
+
+Each palette is inspired by sacred elements of Wixarika culture:
+
+- **Tatewari** (Grandfather Fire): Warm reds and golds
+- **Kauyumari** (Deer Spirit): Forest greens and sky blues  
+- **Hikuri** (Sacred Peyote): Deep teals to bright yellows
+- **Nierika** (Spiritual Portal): Balanced earth and sky tones
+```{r palette-info}
+wixarika_pal_info("tatewari_warm")
+```

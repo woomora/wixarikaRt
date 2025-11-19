@@ -1,0 +1,67 @@
+url: https://woomora.github.io/wixarikaRt/
+template:
+  bootstrap: 5
+  bootswatch: flatly
+  theme: arrow-light
+  bslib:
+    primary: "#D84F35"
+    secondary: "#4A6B8A"
+    success: "#4E805D"
+
+home:
+  title: "wixarikaRt • Color Palettes Inspired by Wixarika (Huichol) People"
+  description: >
+    Beautiful color palettes inspired by Wixarika (Huichol) art and culture
+
+navbar:
+  structure:
+    left:  [intro, reference, articles, tutorials, news]
+    right: [search, github]
+  components:
+    home: ~
+    reference:
+      text: Reference
+      href: reference/index.html
+    articles:
+      text: Articles
+      menu:
+      - text: Getting Started
+        href: articles/introduction-to-wixarikaRt.html
+      - text: Gallery of Palettes
+        href: articles/palette-gallery.html
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/yourusername/wixarikaRt
+
+reference:
+  - title: "Color Palettes"
+    desc: "Access and view color palettes"
+    contents:
+    - wixarika_palettes
+    - wixarika_palette_info
+    - wixarika_pal
+    - wixarika_pal_names
+
+  - title: "Visualization Functions"
+    desc: "Display and explore palettes"
+    contents:
+    - wixarika_show_pal
+    - wixarika_show_all
+    - wixarika_pal_info
+
+  - title: "ggplot2 Scales"
+    desc: "Use palettes with ggplot2"
+    contents:
+    - scale_color_wixarika
+    - scale_colour_wixarika
+    - scale_fill_wixarika
+
+figures:
+  dev: ragg::agg_png
+  dpi: 96
+  dev.args: []
+  fig.ext: png
+  fig.width: 7
+  fig.height: 5
+  fig.retina: 2
+  bg: "white"

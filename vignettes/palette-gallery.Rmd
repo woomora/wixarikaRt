@@ -1,0 +1,89 @@
+---
+title: "Complete Palette Gallery"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Complete Palette Gallery}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 8,
+  fig.height = 3
+)
+library(wixarikaRt)
+```
+
+## Sequential Palettes
+
+### Tatewari Warm
+```{r tatewari-warm}
+wixarika_show_pal("tatewari_warm")
+```
+
+Inspired by Grandfather Fire. Perfect for warm data progressions.
+
+### Kauyumari Forest & Sky
+```{r kauyumari}
+wixarika_show_pal("kauyumari_forestsky")
+```
+
+Sacred deer spirit colors, blending forest and sky.
+
+### Hikuri Sequential
+```{r hikuri-seq}
+wixarika_show_pal("hikuri_seq")
+```
+
+Smooth gradient inspired by sacred peyote.
+
+## Diverging Palettes
+
+### Nierika Diverging
+```{r nierika}
+wixarika_show_pal("nierika_diverging")
+```
+
+Portal between worlds - cool to warm.
+
+### Haramara Tatewari
+```{r haramara}
+wixarika_show_pal("haramara_tatewari")
+```
+
+Ocean to fire - teal through cream to gold.
+
+## Qualitative Palettes
+
+### Muvieri Vivid
+```{r muvieri}
+wixarika_show_pal("muvieri_vivid")
+```
+
+Ceremonial arrows - bold, contrasting colors.
+
+### Mapa de Lenguas
+```{r mapa}
+wixarika_show_pal("mapa_lenguas")
+```
+
+Based on the historic indigenous languages map of Mexico.
+
+## Colorblind-Friendly Options
+
+### Tsikuri Qualitative (CB)
+```{r cb-qual}
+wixarika_show_pal("tsikuri_q_cb")
+```
+
+### Nakawe Sequential (CB)
+```{r cb-seq}
+wixarika_show_pal("nakawe_seq_cb")
+```
+
+### Tsikuri Diverging (CB)
+```{r cb-div}
+wixarika_show_pal("tsikuri_div_cb")
+```
