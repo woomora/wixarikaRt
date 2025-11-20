@@ -12,76 +12,74 @@ knitr::opts_chunk$set(
 )
 ```
 
-# wixarikaRt
+# wixarikaRt <img src="man/figures/logo.png" align="right" height="139" />
 
-**wixarikaRt** provides a collection of color palettes inspired by the art, culture, and symbolism of the Wixarika (Huichol) people and other Indigenous peoples of Mexico.
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+<!-- badges: end -->
+
+**wixarikaRt** provides a collection of color palettes inspired by the art, culture, and symbolism of the Wixarika people (Wixaritari in plural), and other Indigenous peoples of Mexico.
+
+<div align="center">
+<img src="https://media.istockphoto.com/id/185231941/es/foto/huichol-de-artesan%C3%ADas.jpg?s=612x612&w=0&k=20&c=4ZcsWRZuYGS_jIXlAsAow8We-TEUWHrF2PZqiwZGJgA=" width="80%" alt="Wixarika art and culture">
+</div>
+
+---
+
+## About the Wixarika People
+
+Wixarika *[viˈʐaɾika]~[viˈraɾika]* means *"a person with a deep heart who loves knowledge"*. They are also miscalled *huicholes*, which means *"the one who flees"*.
+
+The Wixaritari live mostly in the mountain range within the states of Jalisco, Nayarit, Durango, Zacatecas, and San Luis Potosí.
+
+<div align="center">
+<img src="https://revistacuartoscuro.com/admin/wp-content/uploads/2025/10/La-piel-de-Wirikuta-022.jpg" width="80%" alt="Wixarika people">
+<p><em>Photo: Christian Palma - Revista Cuarto Oscuro</em></p>
+</div>
+
+### Learn More About Wixarika Culture
+
+**Academic Resources:**
+
+- [The Huichol Indians: A pre-Columbian culture in Mexico today (1979)](https://unesdoc.unesco.org/ark:/48223/pf0000044064.locale=es) - UNESCO (en, es, fr)
+- [Wixarika, un pueblo en comunicación](https://dgeiib.basica.sep.gob.mx/files/fondo-editorial/educacion-intercultural/cgeib_00079.pdf) - SEP México (es)
+- [Historia, patrimonio y legado de la cultura wixarika](https://elpais.com/mexico/2025-07-15/historia-patrimonio-y-legado-de-la-cultura-wixarika-la-unica-tradicion-indigena-viva-en-la-lista-del-patrimonio-mundial-de-la-unesco.htm) - El País (es)
+- [A Sacred Peyote Ceremony, and a Clash Over COVID-19 Safety](https://www.nytimes.com/2021/07/05/travel/mexico-peyote-pilgrimage.html) - New York Times (en)
+
+**Websites:**
+
+- [Wixarika.org](https://www.wixarika.org/) (en, es)
+
+**Documentaries:**
+
+- [Eco de la Montaña](https://youtu.be/8v5Ho8RPQ78)
+- [Huicholes: The Last Peyote Guardians](https://huicholesfilm.com/en/)
+
+### Support Wixarika Communities
+
+Consider donating to organizations working with the Wixaritari:
+
+- [Casa Huichol](https://casahuichol.com/) 
+- [Wixarika.org](https://www.wixarika.org/)
+- [Yurienaka Parewiwame](https://app.fgfunnels.com/v2/preview/SwaS84NONFzGeCF9dgUk)
+
+---
 
 ## Installation
 
-You can install the development version of wixarikaRt from GitHub:
-```r
+You can install the development version of **wixarikaRt** from GitHub:
+```{r, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("yourusername/wixarikaRt")
+devtools::install_github("woomora/wixarikaRt")
 ```
 
-## Quick Start
-```r
-library(wixarikaRt)
+## Citation
 
-# List all available palettes
-wixarika_pal_names()
-
-# Show all palettes
-wixarika_show_all()
-
-# Get a specific palette
-colors <- wixarika_pal("tatewari_warm")
-
-# Use with ggplot2
-library(ggplot2)
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
-  geom_point(size = 3) +
-  scale_color_wixarika("muvieri_vivid")
+If you use **wixarikaRt** in your research or publications, please cite:
+```{r citation, eval = FALSE}
+citation("wixarikaRt")
 ```
-
-## Available Palettes
-
-The package includes 18 carefully crafted palettes:
-
-### Sequential Palettes
-- `tatewari_warm` - Warm tones inspired by Grandfather Fire
-- `kauyumari_forestsky` - Forest greens and sky blues
-- `tayau_dawn` - Dawn colors from Father Sun
-- `nakawe_earthnight` - Earth and ocean tones
-- `hikuri_teal` - Sacred peyote colors
-- `hikuri_seq` - Smooth teal to yellow gradient
-- `kiekari_sky_seq` - Sky progression
-- `tatewari_embers_seq` - Fire embers
-
-### Diverging Palettes
-- `nierika_diverging` - Portal between worlds
-- `haramara_tatewari` - Ocean to fire
-- `tatewari_spectrum` - Full fire spectrum
-- `tsikuri_div_cb` - Colorblind-friendly diverging
-
-### Qualitative Palettes
-- `tsikuri_balance` - Balanced ceremonial colors
-- `muvieri_vivid` - Vivid ceremonial arrows
-- `mapa_lenguas` - Historical language map colors
-- `tsikuri_q_cb` - Colorblind-friendly qualitative
-
-### Extended Palettes
-- `hikuri_teal_extended` - Extended peyote colors
-- `mapa_lenguas_named` - Named language families
-
-## Cultural Context
-
-The Wixarika (Huichol) people are an indigenous group from the Sierra Madre Occidental in Mexico, known for their vibrant yarn paintings, beadwork, and deep spiritual traditions.
-
-## License
-
-MIT License
 
 ## Acknowledgments
 
-This package is created with deep respect for the Wixarika people and other Indigenous peoples of Mexico.
+This package is created with deep respect for the Wixarika people and other Indigenous peoples of Mexico. The color palettes are inspired by traditional art and cultural symbolism, but are not direct reproductions of sacred or ceremonial designs.

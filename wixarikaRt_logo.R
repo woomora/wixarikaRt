@@ -37,6 +37,8 @@ create_beadwork_diamond <- function(grid_size = 40) {
 # Create and plot the diamond pattern
 beadwork1 <- create_beadwork_diamond(24)
 
+summary(beadwork1$y)
+
 p1 <-
   ggplot(beadwork1, aes(x = x, y = y, fill = factor(pattern))) +
   geom_tile(color = "#1A1A1A", size = 0.1) +
@@ -45,11 +47,12 @@ p1 <-
   theme_void() +
   theme(legend.position = "none",
         plot.background = element_rect(fill = "transparent", color = NA),
-        panel.background = element_rect(fill = "transparent", color = NA))
+        panel.background = element_rect(fill = "transparent", color = NA)) +
+  coord_cartesian(ylim = c(4.25,19.75))
 
 p1
 
-ggsave("man/figures/beadwork_diamond.png", p1, width = 6, height = 6, dpi = 300, bg = "transparent")
+ggsave("man/figures/beadwork_diamond.png", p1, width = 6, height = 3.35, dpi = 600, bg = "transparent")
 
 library(hexSticker)
 
@@ -61,20 +64,20 @@ set.seed(123)
 sticker(
   beadwork_diamond.png,
   package = "wixarikaRt",
-  p_size = 14,
-  p_y = 1.625,
+  p_size = 45,
+  p_y = 1.635,
   p_color = "#E36321",
   p_family = "Aller_Rg",
   p_fontface = "bold",
-  s_x = 1,
-  s_y = .95,
-  s_width = 1.25,
-  s_height = 1.25,
+  s_x = 1.002,
+  s_y = 1,
+  s_width = 1.865,
+  s_height = 1.865,
   h_fill = "#F7F7F2",
-  h_color = "#1E8E90",
-  h_size = 0,
+  h_color = "#1A6E73",
+  h_size = 1.2,
   filename = "man/figures/logo.png",
-  dpi = 300,
+  dpi = 900,
   white_around_sticker = F
 )
 
