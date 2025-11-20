@@ -7,7 +7,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/yourusername/wixarikaRt/blob/HEAD/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/yourusername/wixarikaRt/blob/master/DESCRIPTION)
 
 Woo-Mora G (2025). *wixarikaRt: Color Palettes Inspired by Wixarika
 (Huichol) people*. R package version 0.1.0,

@@ -1,10 +1,10 @@
-pandoc: '3.4'
+pandoc: 3.1.11
 pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   introduction-to-wixarikaRt: introduction-to-wixarikaRt.html
   palette-gallery: palette-gallery.html
-last_built: 2025-11-20T10:13Z
+last_built: 2025-11-20T10:16Z
 urls:
   reference: https://woomora.github.io/wixarikaRt/reference
   article: https://woomora.github.io/wixarikaRt/articles
