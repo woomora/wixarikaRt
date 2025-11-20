@@ -60,12 +60,20 @@ ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
 
 ## Cultural Context
 
-Each palette is inspired by sacred elements of Wixarika culture:
+Each palette is inspired by sacred elements of Wixarika cosmology:
 
-- **Tatewari** (Grandfather Fire): Warm reds and golds
-- **Kauyumari** (Deer Spirit): Forest greens and sky blues  
-- **Hikuri** (Sacred Peyote): Deep teals to bright yellows
-- **Nierika** (Spiritual Portal): Balanced earth and sky tones
+- **Tatewari** (Grandfather Fire): The first shaman, guide of the
+  Wixarika people
+- **Kauyumari** (Deer Spirit): Sacred messenger between worlds
+- **Tayau** (Father Sun): Source of life and energy
+- **Nakawe** (Grandmother Earth/Ocean): Mother of all life
+- **Hikuri** (Sacred Peyote): Medicine plant central to spiritual
+  practices
+- **Nierika** (Portal): Threshold between physical and spiritual realms
+- **Tsikuri** (Gourd Bowl): Ceremonial vessel used in rituals
+- **Muvieri** (Arrows): Offerings and prayers to the deities
+- **Haramara**: The Pacific Ocean, sacred site of pilgrimage
+- **Kiekari**: The sky and celestial elements
 
 ``` r
 wixarika_pal_info("tatewari_warm")
